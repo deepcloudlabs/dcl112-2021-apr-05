@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.17)
+project(module02)
+project(study-parameter-passing)
+project(study-new-and-delete)
+project(study-inline-functions)
+project(study-reference-operator)
+project(study-template-functions)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(module02 main.cpp study-inline-functions.cpp study-reference-operator.cpp study-parameter-passing.cpp study-new-and-delete.cpp)
+add_executable(study-parameter-passing study-parameter-passing.cpp)
+add_executable(study-new-and-delete study-new-and-delete.cpp)
+add_executable(study-inline-functions study-inline-functions.cpp)
+add_executable(study-reference-operator study-reference-operator.cpp)
+add_executable(study-template-functions study-template-functions.cpp)
