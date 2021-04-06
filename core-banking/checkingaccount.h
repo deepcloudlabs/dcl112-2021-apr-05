@@ -8,8 +8,10 @@
 #include "account.h"
 
 namespace banking {
-
-    class CheckingAccount : public account {
+    // public inheritance: account's public member --> CheckingAccount's public member
+    // vs
+    // private inheritance: account's public member --> CheckingAccount's private member
+    class CheckingAccount : private account {
         double overdraftAmount;
     public:
         CheckingAccount(const std::string &iban, double balance, double overdraftAmount);
