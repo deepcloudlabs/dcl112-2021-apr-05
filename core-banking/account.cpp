@@ -2,13 +2,15 @@
 // Created by dcl on 4/6/2021.
 //
 
+#include <iostream>
 #include "account.h"
 
 using namespace banking;
 
-account::account(const std::string &iban, double balance) {
-    this->balance = balance;
-    this->iban = iban;
+int account::numOfAccounts = 0; // definition
+
+account::account(const std::string &iban, double balance) : iban(iban), balance(balance) {
+    numOfAccounts++;
 }
 
 const std::string &account::getIban() const {
@@ -36,10 +38,17 @@ double account::withdraw(const double amount, bool withdrawAvailable) {
     }
     this->balance = this->balance - amount;
     return amount;
+}
 
+account::~account() {
+    numOfAccounts--;
+    std::cout << "account's destructor " << this->iban
+              << ", numOfAccounts: "
+              << numOfAccounts
+              << std::endl;
 }
 
 std::ostream &banking::operator<<(std::ostream &os, const account &account) {
-    os << "account [ iban: " << account.iban << ", balance: " << account.balance << " ]";
+    os << "account [ iban: " << account.getIban() << ", balance: " << account.getBalance() << " ]";
     return os;
 }

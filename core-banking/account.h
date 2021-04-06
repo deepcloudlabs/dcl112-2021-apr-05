@@ -7,14 +7,25 @@
 // ctrl + alt + l
 namespace banking {
     // entity
-    class account { // encapsulation : (iinformation hding) attribute + method
-    private: // default
-        std::string iban; // attribute -> identity
-        double balance; // >= 0.0
-    public:
+    struct account { // encapsulation : (information hiding) attribute + method
+    private: // default access mode -> class
+        const std::string iban; // attribute -> identity
+        static int numOfAccounts; // declaration
+    protected:
+        double balance; // >= 0.0 -> optional
+    public: // default access mode -> struct
         // constructor
-        account(const std::string &iban, double balance = 0.0);
+        // explicit (c++11) -> disallows primitive conversion
+        explicit account(double balance) : iban("tr42"), balance(balance){ }
 
+        account(const std::string &iban, double balance = 0.0);
+        static int getNumOfAccounts(){
+            return numOfAccounts;
+        }
+        // =delete deletes copy constructor
+        account(const account& other) = delete;
+        // =delete deletes assignment operator
+        account &operator=(const account& other) = delete;
         // setter/getter
         inline const std::string &getIban() const; // read-only
         // const std::string * const getIban() const; // read-only
@@ -26,9 +37,10 @@ namespace banking {
         // business method
         bool deposit(const double amount);
 
-        double withdraw(const double amount, bool withdrawAvailable=false);
+        virtual double withdraw(const double amount, bool withdrawAvailable=false);
 
-        friend std::ostream &operator<<(std::ostream &os, const account &account);
+        virtual ~account();
+        // friend std::ostream &operator<<(std::ostream &os, const account &account);
     };
     std::ostream &operator<<(std::ostream &os, const account &account);
 }

@@ -1,8 +1,16 @@
 cmake_minimum_required(VERSION 3.17)
 project(core_banking)
 project(study-object-arrays)
+project(study-constant-object)
+project(study-static-instance-variable)
+project(study-copying)
+project(study-inheritance)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(core_banking main.cpp account.cpp account.h)
+add_executable(core_banking main.cpp account.cpp account.h study-constant-object.cpp study-static-instance-variable.cpp study-copying.cpp checkingaccount.cpp checkingaccount.h study-inheritance.cpp)
 add_executable(study-object-arrays account.cpp account.h study-object-arrays.cpp)
+add_executable(study-constant-object account.cpp account.h study-constant-object.cpp)
+add_executable(study-static-instance-variable account.cpp account.h study-static-instance-variable.cpp)
+add_executable(study-copying account.cpp account.h study-copying.cpp)
+add_executable(study-inheritance account.cpp account.h checkingaccount.cpp checkingaccount.h  study-inheritance.cpp)
