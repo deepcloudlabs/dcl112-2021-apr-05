@@ -15,10 +15,6 @@ const std::string &account::getIban() const {
     return iban;
 }
 
-double account::getBalance() const {
-    return balance;
-}
-
 bool account::deposit(const double amount) {
     // validation
     if (amount <= 0.0) return false;

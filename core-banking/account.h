@@ -16,10 +16,12 @@ namespace banking {
         account(const std::string &iban, double balance = 0.0);
 
         // setter/getter
-        const std::string &getIban() const; // read-only
+        inline const std::string &getIban() const; // read-only
         // const std::string * const getIban() const; // read-only
 
-        double getBalance() const;
+        double getBalance() const { // inlined
+            return balance;
+        }
 
         // business method
         bool deposit(const double amount);
