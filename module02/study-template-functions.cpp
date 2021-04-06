@@ -9,7 +9,7 @@ void printArray(const T *a,const int size){
 
 void printArray(const int *a,const int size){
     for (int i=0;i < size;i++)
-        std::cout << a[i] << "," ;
+        std::cout << a[i] << " , " ;
     std::cout << std::endl ;
 }
 
