@@ -2,26 +2,34 @@
 #define CORE_BANKING_ACCOUNT_H
 
 #include <string>
+#include <ostream>
 
-// entity
-class account { // encapsulation : (information hiding) attribute + method
-private: // default
-    const std::string iban; // attribute -> identity
-    double balance; // >= 0.0
-public:
-    // constructor
-    account(const std::string &iban, double balance = 0.0);
+// ctrl + alt + l
+namespace banking {
+    // entity
+    class account { // encapsulation : (iinformation hding) attribute + method
+    private: // default
+        std::string iban; // attribute -> identity
+        double balance; // >= 0.0
+    public:
+        // constructor
+        account(const std::string &iban, double balance = 0.0);
 
-    // setter/getter
-    const std::string &getIban() const; // read-only
+        // setter/getter
+        const std::string &getIban() const; // read-only
+        // const std::string * const getIban() const; // read-only
 
-    double getBalance() const;
+        double getBalance() const;
 
-    // business method
-    bool deposit(const double amount);
-    bool withdraw(const double amount);
+        // business method
+        bool deposit(const double amount);
 
-};
+        double withdraw(const double amount, bool withdrawAvailable=false);
+
+        friend std::ostream &operator<<(std::ostream &os, const account &account);
+    };
+    std::ostream &operator<<(std::ostream &os, const account &account);
+}
 
 
 #endif //CORE_BANKING_ACCOUNT_H
