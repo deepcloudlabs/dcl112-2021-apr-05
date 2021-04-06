@@ -1,5 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/core_banking.dir/account.cpp.o"
+  "CMakeFiles/core_banking.dir/checkingaccount.cpp.o"
   "CMakeFiles/core_banking.dir/main.cpp.o"
+  "CMakeFiles/core_banking.dir/study-constant-object.cpp.o"
+  "CMakeFiles/core_banking.dir/study-copying.cpp.o"
+  "CMakeFiles/core_banking.dir/study-inheritance.cpp.o"
+  "CMakeFiles/core_banking.dir/study-static-instance-variable.cpp.o"
   "core_banking.exe"
   "core_banking.pdb"
   "libcore_banking.dll.a"
