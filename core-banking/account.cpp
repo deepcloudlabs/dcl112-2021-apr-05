@@ -13,7 +13,7 @@ account::account(const std::string &iban, double balance) : iban(iban), balance(
     numOfAccounts++;
 }
 
-const std::string &account::getIban() const {
+inline const std::string &account::getIban() const {
     return iban;
 }
 
@@ -46,6 +46,11 @@ account::~account() {
               << ", numOfAccounts: "
               << numOfAccounts
               << std::endl;
+}
+
+account::account(const account &other) : iban(other.iban) {
+    this->balance = other.balance;
+    numOfAccounts++;
 }
 
 std::ostream &banking::operator<<(std::ostream &os, const account &account) {

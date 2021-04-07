@@ -16,19 +16,23 @@ namespace banking {
     public: // default access mode -> struct
         // constructor
         // explicit (c++11) -> disallows primitive conversion
-        explicit account(double balance) : iban("tr42"), balance(balance){ }
+        explicit account(double balance) : iban("tr42"), balance(balance) {
+            numOfAccounts++;
+        }
 
-        account(const std::string &iban= "tr1", double balance = 0.0);
-        static int getNumOfAccounts(){
+        account(const std::string &iban = "tr1", double balance = 0.0);
+
+        account(const account &other);
+
+        static int getNumOfAccounts() {
             return numOfAccounts;
         }
-        // =delete deletes copy constructor
-        account(const account& other) = delete;
+
         // =delete deletes assignment operator
-        account &operator=(const account& other) = delete;
+        account &operator=(const account &other) = delete;
+
         // setter/getter
         inline const std::string &getIban() const; // read-only
-        // const std::string * const getIban() const; // read-only
 
         double getBalance() const { // inlined
             return balance;
@@ -37,11 +41,12 @@ namespace banking {
         // business method
         virtual bool deposit(const double amount);
 
-        virtual double withdraw(const double amount, bool withdrawAvailable=false);
+        virtual double withdraw(const double amount, bool withdrawAvailable = false);
 
         virtual ~account();
         // friend std::ostream &operator<<(std::ostream &os, const account &account);
     };
+
     std::ostream &operator<<(std::ostream &os, const account &account);
 }
 

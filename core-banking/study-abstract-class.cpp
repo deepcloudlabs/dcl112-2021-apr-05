@@ -90,20 +90,29 @@ public:
     }
 };
 int main() {
-    animal *animals[6]{
+    spider spider1;
+
+    animal *animals[7]{
       new spider, new cat(), new spider,
       new fish("free willy"), new cat("garfield"),
-      new spider
+      new spider, &spider1
     };
+    spider1.eat(); // static binding
+    animals[6]->eat(); // late/dynamic binding
+    animals[5]->eat(); // late/dynamic binding
+
     for (int i=0;i<6;++i){
         animal *p = animals[i];
         cout << typeid(*p).name() << endl;
         p->walk();
         p->eat();
-        if (typeid(*p) != typeid(spider)){
+        // if (typeid(*p) != typeid(spider)){
             pet *q = dynamic_cast<pet*>(p);
-            q->play();
-        }
+            cout << "p: " << hex << p << endl;
+            cout << "q: " << hex << q << endl;
+            if (q != nullptr)
+               q->play();
+        // }
     }
     return 0;
 }
