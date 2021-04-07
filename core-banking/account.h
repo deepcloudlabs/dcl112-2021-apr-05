@@ -18,7 +18,7 @@ namespace banking {
         // explicit (c++11) -> disallows primitive conversion
         explicit account(double balance) : iban("tr42"), balance(balance){ }
 
-        account(const std::string &iban, double balance = 0.0);
+        account(const std::string &iban= "tr1", double balance = 0.0);
         static int getNumOfAccounts(){
             return numOfAccounts;
         }
@@ -35,7 +35,7 @@ namespace banking {
         }
 
         // business method
-        bool deposit(const double amount);
+        virtual bool deposit(const double amount);
 
         virtual double withdraw(const double amount, bool withdrawAvailable=false);
 

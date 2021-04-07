@@ -7,7 +7,8 @@
 // account: base class, super class
 // CheckingAccount: derived class, sub-class
 banking::CheckingAccount::CheckingAccount(const std::string &iban, double balance, double overdraftAmount) :
-        account(iban, balance), // account::account(iban, balance)
+        account(iban, balance),
+        // account::account(), // implicit
         overdraftAmount(overdraftAmount) {
     // constructor
 }
