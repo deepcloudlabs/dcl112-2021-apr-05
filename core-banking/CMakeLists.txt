@@ -16,7 +16,7 @@ project(study-exception)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(core_banking main.cpp account.cpp account.h study-constant-object.cpp study-static-instance-variable.cpp study-copying.cpp checkingaccount.cpp checkingaccount.h study-inheritance.cpp study-object-pointers.cpp study-polymorphism.cpp study-typeid.cpp study-abstract-class.cpp customer.cpp customer.h study-lambda-expressions.cpp customer-app.cpp study-stl.cpp study-exception.cpp insufficientbalanceexception.cpp insufficientbalanceexception.h)
+add_executable(core_banking main.cpp account.cpp account.h study-constant-object.cpp study-static-instance-variable.cpp study-copying.cpp checkingaccount.cpp checkingaccount.h study-inheritance.cpp study-object-pointers.cpp study-polymorphism.cpp study-typeid.cpp study-abstract-class.cpp customer.cpp customer.h study-lambda-expressions.cpp customer-app.cpp study-stl.cpp study-exception.cpp insufficientbalanceexception.cpp insufficientbalanceexception.h study-resource-management.cpp)
 add_executable(study-object-arrays account.cpp account.h study-object-arrays.cpp)
 add_executable(study-constant-object account.cpp account.h study-constant-object.cpp)
 add_executable(study-static-instance-variable account.cpp account.h study-static-instance-variable.cpp)

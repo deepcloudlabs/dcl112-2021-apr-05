@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/core_banking.dir/study-lambda-expressions.cpp.obj"
   "CMakeFiles/core_banking.dir/study-object-pointers.cpp.obj"
   "CMakeFiles/core_banking.dir/study-polymorphism.cpp.obj"
+  "CMakeFiles/core_banking.dir/study-resource-management.cpp.obj"
   "CMakeFiles/core_banking.dir/study-static-instance-variable.cpp.obj"
   "CMakeFiles/core_banking.dir/study-stl.cpp.obj"
   "CMakeFiles/core_banking.dir/study-typeid.cpp.obj"
