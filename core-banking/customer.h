@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <map>
+#include <deque>
 #include <memory>
 #include <optional>
 #include <ostream>
@@ -18,7 +20,7 @@ namespace banking {
         const string tcKimlikNo;
         string fullname;
     protected:
-        vector<shared_ptr<account>> accounts;
+        deque<shared_ptr<account>> accounts;
     public:
         customer() = delete;
 
@@ -34,13 +36,17 @@ namespace banking {
 
         void addAccount(account &&);
 
+        std::map<std::string,double> groupByAccountType() const noexcept;
+
         optional<shared_ptr<banking::account>> findAccount1(const string &iban) const;
 
         optional<shared_ptr<banking::account>> findAccount2(const string &iban) const;
 
         optional<shared_ptr<banking::account>> findAccount(int index) const;
 
-        int getNumOfAccounts() const;
+        double getTotalBalance() const ;
+
+        int getNumOfAccounts() const noexcept;
 
         friend ostream &operator<<(ostream &os, const customer &customer);
 

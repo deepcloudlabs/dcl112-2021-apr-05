@@ -48,7 +48,14 @@ optional<shared_ptr<banking::account>> banking::customer::findAccount(int index)
     return accounts[index];
 }
 
-int banking::customer::getNumOfAccounts() const {
+double banking::customer::getTotalBalance() const {
+    auto reducer = [](auto &total, auto& acc) {
+        return total + acc->getBalance();
+    };
+    return std::accumulate(this->accounts.begin(),this->accounts.end(), double(),reducer);
+}
+
+int banking::customer::getNumOfAccounts() const noexcept {
     return accounts.size();
 }
 

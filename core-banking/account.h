@@ -37,7 +37,7 @@ namespace banking {
         // noexcept => noexcept(true) => (since c++17) throw()
         // noexcept -> specifier
         double getBalance() const  noexcept(true) { // inlined
-            throw "ooopss";
+            // throw "ooopss";
             return balance;
         }
 
