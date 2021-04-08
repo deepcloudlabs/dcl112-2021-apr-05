@@ -16,7 +16,7 @@ using namespace std;
 
 namespace banking {
 
-// entity -> identity -> tcKimlikNo
+    // entity -> identity -> tcKimlikNo
     class customer {
         const string tcKimlikNo;
         string fullname;
@@ -35,10 +35,12 @@ namespace banking {
 
         void addAccount(account &);
 
-        void addAccount(account &&);
-        void addAccount(banking::CheckingAccount &&);
+        template <class T>
+        void addAccount(T &&acc) {
+            this->accounts.push_back(std::make_shared<T>(acc));
+        }
 
-        std::map<std::string,double> groupByAccountType() const noexcept;
+        std::map<std::string, double> groupByAccountType() const noexcept;
 
         optional<shared_ptr<banking::account>> findAccount1(const string &iban) const;
 
@@ -46,7 +48,7 @@ namespace banking {
 
         optional<shared_ptr<banking::account>> findAccount(int index) const;
 
-        double getTotalBalance() const ;
+        double getTotalBalance() const;
 
         int getNumOfAccounts() const noexcept;
 

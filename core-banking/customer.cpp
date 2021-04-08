@@ -18,18 +18,6 @@ void banking::customer::setFullname(const string &fullname) {
     customer::fullname = fullname;
 }
 
-void banking::customer::addAccount(account &acc) {
-    this->accounts.push_back(std::make_shared<account>(acc));
-}
-
-void banking::customer::addAccount(account &&acc) {
-    this->accounts.push_back(std::make_shared<account>(acc));
-}
-
-void banking::customer::addAccount(banking::CheckingAccount &&acc) {
-    this->accounts.push_back(std::make_shared<account>(acc));
-}
-
 optional<shared_ptr<banking::account>> banking::customer::findAccount1(const string &iban) const {
     // serial -> single cpu
     for (auto &acc : accounts) {

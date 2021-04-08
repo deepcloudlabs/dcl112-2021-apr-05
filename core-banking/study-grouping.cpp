@@ -3,13 +3,16 @@
 #include <vector>
 #include <algorithm>
 #include <memory>
-#include <numeric>
+#include <parallel/numeric>
 #include "checkingaccount.h"
 
 using namespace banking;
 using namespace std;
 
 int main(){
+    // coroutine (c++20)
+    // generator function (c++20)
+    // range abstraction -> STL -> filter/map/reduce -> Linux Shell Pipe ( | )  (c++20)
     vector<shared_ptr<account>> accounts;
 
     accounts.push_back(make_shared<account>(account("tr1", 1'000)));
