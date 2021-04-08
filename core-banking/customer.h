@@ -10,6 +10,7 @@
 #include <ostream>
 
 #include "account.h"
+#include "checkingaccount.h"
 
 using namespace std;
 
@@ -35,6 +36,7 @@ namespace banking {
         void addAccount(account &);
 
         void addAccount(account &&);
+        void addAccount(banking::CheckingAccount &&);
 
         std::map<std::string,double> groupByAccountType() const noexcept;
 

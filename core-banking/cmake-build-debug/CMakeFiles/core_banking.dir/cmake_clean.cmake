@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/core_banking.dir/study-constant-object.cpp.obj"
   "CMakeFiles/core_banking.dir/study-copying.cpp.obj"
   "CMakeFiles/core_banking.dir/study-exception.cpp.obj"
+  "CMakeFiles/core_banking.dir/study-grouping.cpp.obj"
   "CMakeFiles/core_banking.dir/study-inheritance.cpp.obj"
   "CMakeFiles/core_banking.dir/study-lambda-expressions.cpp.obj"
   "CMakeFiles/core_banking.dir/study-object-pointers.cpp.obj"

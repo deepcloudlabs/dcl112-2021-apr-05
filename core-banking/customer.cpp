@@ -1,4 +1,5 @@
 #include "customer.h"
+#include "checkingaccount.h"
 #include <parallel/algorithm>
 #include <iostream>
 
@@ -22,6 +23,10 @@ void banking::customer::addAccount(account &acc) {
 }
 
 void banking::customer::addAccount(account &&acc) {
+    this->accounts.push_back(std::make_shared<account>(acc));
+}
+
+void banking::customer::addAccount(banking::CheckingAccount &&acc) {
     this->accounts.push_back(std::make_shared<account>(acc));
 }
 
@@ -49,14 +54,29 @@ optional<shared_ptr<banking::account>> banking::customer::findAccount(int index)
 }
 
 double banking::customer::getTotalBalance() const {
-    auto reducer = [](auto &total, auto& acc) {
+    auto reducer = [](auto &total, auto &acc) {
         return total + acc->getBalance();
     };
-    return std::accumulate(this->accounts.begin(),this->accounts.end(), double(),reducer);
+    return std::accumulate(this->accounts.begin(), this->accounts.end(), double(), reducer);
 }
 
 int banking::customer::getNumOfAccounts() const noexcept {
     return accounts.size();
+}
+
+std::map<std::string, double> banking::customer::groupByAccountType() const noexcept {
+    auto reducer = [](auto &group, auto acc) {
+        auto key = typeid(*acc).name();
+        cout << "key: " << key << std::endl;
+        auto total = acc->getBalance();
+        if( group.find(key) != group.end() )
+            total += group[key];
+        group[key] = total;
+        return group;
+    };
+    return std::accumulate(this->accounts.begin(), this->accounts.end(),
+                           map<std::string,double>(),
+                           reducer);
 }
 
 ostream &banking::operator<<(ostream &os, const banking::customer &customer) {
