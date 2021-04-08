@@ -1,5 +1,7 @@
 #include <iostream>
+#include <parallel/algorithm>
 #include <algorithm>
+#include <numeric>
 #include <vector>
 #include <list>
 #include <set>
@@ -11,8 +13,17 @@ struct PrintInteger {
     }
 };
 
+struct Reduce {
+    int operator()(int sum, int number){
+         return sum + number;
+    }
+};
+
 int main() {
+    // stack object
     std::deque<int> numbers{4, 8, 15, 16, 23, 42};
+    // heap object
+    std::deque<int> *p = new std::deque<int>;
     std::cout << "size: " << numbers.size() << std::endl;
     numbers.push_back(62); // rear
     std::cout << "size: " << numbers.size() << std::endl;
@@ -41,5 +52,11 @@ int main() {
     std::for_each(numbers.begin(),numbers.end(),[](int number){
         std::cout << number << std::endl;
     });
+    auto total = std::accumulate(numbers.begin(),numbers.end(),int(),Reduce() );
+    total = std::accumulate(numbers.begin(),numbers.end(),int(),std::plus<int>() );
+    auto reducer = [](auto sum,auto number){ return sum + number; } ;
+    total = std::accumulate(numbers.begin(),numbers.end(),int(), reducer );
+    std::cout << "total: " << total << std::endl;
+
     return 0;
 }
