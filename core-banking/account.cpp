@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "account.h"
+#include "insufficientbalanceexception.h"
 
 using namespace banking;
 
@@ -25,19 +26,28 @@ bool account::deposit(const double amount) {
     return true;
 }
 
-double account::withdraw(const double amount, bool withdrawAvailable) {
+double account::withdrawAvailable(const double amount) {
     // validation
     if (amount <= 0.0) return 0.0;
-    // business rule
-    if (!withdrawAvailable && amount > this->balance) return 0.0;
     // business logic
-    if (withdrawAvailable && amount > this->balance) {
+    if (amount > this->balance) {
         double value = this->balance;
         this->balance = 0;
         return value;
     }
     this->balance = this->balance - amount;
     return amount;
+}
+
+void account::withdraw(const double amount) {
+    // validation
+    if (amount <= 0.0)
+        if (amount <= 0.0) throw std::runtime_error("amount cannot be negative!");
+    // business logic
+    if (amount > this->balance) {
+        throw banking::InsufficientBalanceException("your balance does not cover the whole amount!");
+    }
+    this->balance = this->balance - amount;
 }
 
 account::~account() {

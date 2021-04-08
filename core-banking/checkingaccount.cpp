@@ -3,6 +3,7 @@
 //
 
 #include "checkingaccount.h"
+#include "insufficientbalanceexception.h"
 
 // account: base class, super class
 // CheckingAccount: derived class, sub-class
@@ -21,17 +22,12 @@ void banking::CheckingAccount::setOverdraftAmount(double overdraftAmount) {
     CheckingAccount::overdraftAmount = overdraftAmount;
 }
 
-double banking::CheckingAccount::withdraw(const double amount, bool withdrawAvailable) {
+void banking::CheckingAccount::withdraw(const double amount) {
     // validation
-    if (amount <= 0.0) return 0.0;
-    // business rule
-    if (!withdrawAvailable && amount > (this->balance + this->overdraftAmount)) return 0.0;
+    if (amount <= 0.0) throw std::runtime_error("amount cannot be negative!");
     // business logic
-    if (withdrawAvailable && amount > (this->balance + this->overdraftAmount)) {
-        double value = this->balance + this->overdraftAmount;
-        this->balance = -this->overdraftAmount;
-        return value;
+    if (amount > (this->balance + this->overdraftAmount)) {
+        throw banking::InsufficientBalanceException("your balance does not cover the whole amount!");
     }
     this->balance = this->balance - amount;
-    return amount;
 }

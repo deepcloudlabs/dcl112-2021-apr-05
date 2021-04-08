@@ -41,7 +41,8 @@ namespace banking {
         // business method
         virtual bool deposit(const double amount);
 
-        virtual double withdraw(const double amount, bool withdrawAvailable = false);
+        virtual double withdrawAvailable(const double amount);
+        virtual void withdraw(const double amount);
 
         virtual ~account();
         // friend std::ostream &operator<<(std::ostream &os, const account &account);

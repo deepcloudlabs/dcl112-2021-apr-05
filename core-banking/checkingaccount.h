@@ -25,7 +25,7 @@ namespace banking {
         // overloading (the same class, distinct signature)
 
         // c++11: override
-        double withdraw(const double amount, bool withdrawAvailable=false) override;
+        void withdraw(const double amount) override;
     };
 }
 
