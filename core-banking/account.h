@@ -32,19 +32,23 @@ namespace banking {
         account &operator=(const account &other) = delete;
 
         // setter/getter
-        inline const std::string &getIban() const; // read-only
+        inline const std::string &getIban() const noexcept; // read-only
 
-        double getBalance() const { // inlined
+        // noexcept => noexcept(true) => (since c++17) throw()
+        // noexcept -> specifier
+        double getBalance() const  noexcept(true) { // inlined
+            throw "ooopss";
             return balance;
         }
 
         // business method
         virtual bool deposit(const double amount);
 
-        virtual double withdrawAvailable(const double amount);
-        virtual void withdraw(const double amount);
+        virtual double withdrawAvailable(const double amount) noexcept(false);
 
-        virtual ~account();
+        virtual void withdraw(const double amount) noexcept(false);
+
+        virtual ~account() noexcept;
         // friend std::ostream &operator<<(std::ostream &os, const account &account);
     };
 

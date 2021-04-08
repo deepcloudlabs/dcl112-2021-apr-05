@@ -5,6 +5,7 @@
 #include <iostream>
 #include "account.h"
 #include "insufficientbalanceexception.h"
+#include "../../../../../Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/include/exception"
 
 using namespace banking;
 
@@ -14,7 +15,7 @@ account::account(const std::string &iban, double balance) : iban(iban), balance(
     numOfAccounts++;
 }
 
-inline const std::string &account::getIban() const {
+inline const std::string &account::getIban() const noexcept {
     return iban;
 }
 

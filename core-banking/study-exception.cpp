@@ -14,5 +14,9 @@ int main(){
     }catch (const std::runtime_error err){
         std::cout << err.what() << std::endl ;
     }
+    acc.getBalance();
+    // noexcept: operator
+    std::cout << (noexcept(acc.withdraw(-1)) ? "true" : "false") << std::endl;
+    std::cout << (noexcept(acc.getBalance()) ? "true" : "false") << std::endl;
 }
 
