@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/study-parallel-programming.dir/study-parallel-programming.cpp.o  -o study-parallel-programming.exe -Wl,--out-implib,libstudy-parallel-programming.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
