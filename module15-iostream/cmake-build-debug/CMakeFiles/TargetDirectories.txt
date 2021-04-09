@@ -1,0 +1,4 @@
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/CMakeFiles/module15_iostream.dir
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/CMakeFiles/read-circle.cpp.dir

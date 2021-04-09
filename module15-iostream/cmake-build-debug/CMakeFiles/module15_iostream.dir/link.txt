@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/module15_iostream.dir/main.cpp.o CMakeFiles/module15_iostream.dir/circle.cpp.o  -o module15_iostream.exe -Wl,--out-implib,libmodule15_iostream.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

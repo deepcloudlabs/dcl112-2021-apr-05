@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="read-circle"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="module15_iostream">
+				<Option output="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/module15_iostream.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 module15_iostream"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="module15_iostream/fast">
+				<Option output="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/module15_iostream.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 module15_iostream/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="read-circle.cpp">
+				<Option output="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/read-circle.cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 read-circle.cpp"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="read-circle.cpp/fast">
+				<Option output="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/read-circle.cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/9.3.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 read-circle.cpp/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/circle.cpp">
+			<Option target="module15_iostream"/>
+			<Option target="read-circle.cpp"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/circle.h">
+			<Option target="module15_iostream"/>
+			<Option target="read-circle.cpp"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/main.cpp">
+			<Option target="module15_iostream"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/read-circle.cpp">
+			<Option target="read-circle.cpp"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
