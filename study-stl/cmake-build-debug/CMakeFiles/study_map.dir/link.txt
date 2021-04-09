@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -fopenmp -g  -Wl,--enable-auto-import CMakeFiles/study_map.dir/study-map.cpp.o  -o study_map.exe -Wl,--out-implib,libstudy_map.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

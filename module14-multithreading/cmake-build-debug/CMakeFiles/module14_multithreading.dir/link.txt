@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/module14_multithreading.dir/main.cpp.o  -o module14_multithreading.exe -Wl,--out-implib,libmodule14_multithreading.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

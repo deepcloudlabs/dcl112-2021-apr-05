@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/core-banking
+# Install script for directory: /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/study-stl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/core-banking/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/study-stl/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

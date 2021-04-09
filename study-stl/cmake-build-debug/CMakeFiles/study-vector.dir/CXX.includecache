@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/study-stl/study-vector.cpp
+iostream
+-
+parallel/algorithm
+-
+numeric
+-
+vector
+-
+list
+-
+set
+-
+deque
+-
+

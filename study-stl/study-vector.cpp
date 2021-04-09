@@ -1,6 +1,5 @@
 #include <iostream>
 #include <parallel/algorithm>
-#include <algorithm>
 #include <numeric>
 #include <vector>
 #include <list>
@@ -21,7 +20,7 @@ struct Reduce {
 
 int main() {
     // stack object
-    std::deque<int> numbers{4, 8, 15, 16, 23, 42};
+    std::deque<int> numbers{4, 8, 15, 16, 23, 42, 4, 8, 15, 16, 23, 42, 4, 8, 15, 16, 23, 42, 4, 8, 15, 16, 23, 42};
     // heap object
     std::deque<int> *p = new std::deque<int>;
     std::cout << "size: " << numbers.size() << std::endl;

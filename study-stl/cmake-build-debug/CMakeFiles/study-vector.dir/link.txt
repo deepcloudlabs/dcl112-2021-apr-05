@@ -1,0 +1,1 @@
+/usr/bin/c++.exe  -fopenmp -g  -Wl,--enable-auto-import CMakeFiles/study-vector.dir/study-vector.cpp.o  -o study-vector.exe -Wl,--out-implib,libstudy-vector.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthread 
