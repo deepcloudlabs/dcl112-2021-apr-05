@@ -143,6 +143,19 @@ module14_multithreading/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/build
 .PHONY : module14_multithreading/fast
 
+#=============================================================================
+# Target rules for targets named study-parallel-programming
+
+# Build rule for target.
+study-parallel-programming: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 study-parallel-programming
+.PHONY : study-parallel-programming
+
+# fast build rule for target.
+study-parallel-programming/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/build
+.PHONY : study-parallel-programming/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -170,6 +183,36 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+study-parallel-programming.o: study-parallel-programming.cpp.o
+
+.PHONY : study-parallel-programming.o
+
+# target to build an object file
+study-parallel-programming.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/study-parallel-programming.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/study-parallel-programming.cpp.o
+.PHONY : study-parallel-programming.cpp.o
+
+study-parallel-programming.i: study-parallel-programming.cpp.i
+
+.PHONY : study-parallel-programming.i
+
+# target to preprocess a source file
+study-parallel-programming.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/study-parallel-programming.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/study-parallel-programming.cpp.i
+.PHONY : study-parallel-programming.cpp.i
+
+study-parallel-programming.s: study-parallel-programming.cpp.s
+
+.PHONY : study-parallel-programming.s
+
+# target to generate assembly for a file
+study-parallel-programming.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/study-parallel-programming.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/study-parallel-programming.cpp.s
+.PHONY : study-parallel-programming.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +222,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... module14_multithreading"
+	@echo "... study-parallel-programming"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... study-parallel-programming.o"
+	@echo "... study-parallel-programming.i"
+	@echo "... study-parallel-programming.s"
 .PHONY : help
 
 

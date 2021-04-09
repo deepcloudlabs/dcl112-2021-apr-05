@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/module14_multithreading.dir/main.cpp.o"
+  "CMakeFiles/module14_multithreading.dir/study-parallel-programming.cpp.o"
   "libmodule14_multithreading.dll.a"
   "module14_multithreading.exe"
   "module14_multithreading.pdb"
