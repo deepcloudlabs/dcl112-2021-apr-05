@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named study-thread-safety
+
+# Build rule for target.
+study-thread-safety: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 study-thread-safety
+.PHONY : study-thread-safety
+
+# fast build rule for target.
+study-thread-safety/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/build
+.PHONY : study-thread-safety/fast
+
+#=============================================================================
 # Target rules for targets named module14_multithreading
 
 # Build rule for target.
@@ -213,6 +226,36 @@ study-parallel-programming.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/study-parallel-programming.cpp.s
 .PHONY : study-parallel-programming.cpp.s
 
+study-thread-safety.o: study-thread-safety.cpp.o
+
+.PHONY : study-thread-safety.o
+
+# target to build an object file
+study-thread-safety.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/study-thread-safety.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/study-thread-safety.cpp.o
+.PHONY : study-thread-safety.cpp.o
+
+study-thread-safety.i: study-thread-safety.cpp.i
+
+.PHONY : study-thread-safety.i
+
+# target to preprocess a source file
+study-thread-safety.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/study-thread-safety.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/study-thread-safety.cpp.i
+.PHONY : study-thread-safety.cpp.i
+
+study-thread-safety.s: study-thread-safety.cpp.s
+
+.PHONY : study-thread-safety.s
+
+# target to generate assembly for a file
+study-thread-safety.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/study-thread-safety.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/study-thread-safety.cpp.s
+.PHONY : study-thread-safety.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -223,12 +266,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... module14_multithreading"
 	@echo "... study-parallel-programming"
+	@echo "... study-thread-safety"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... study-parallel-programming.o"
 	@echo "... study-parallel-programming.i"
 	@echo "... study-parallel-programming.s"
+	@echo "... study-thread-safety.o"
+	@echo "... study-thread-safety.i"
+	@echo "... study-thread-safety.s"
 .PHONY : help
 
 

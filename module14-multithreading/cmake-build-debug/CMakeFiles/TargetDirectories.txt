@@ -1,4 +1,5 @@
 /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles/study-thread-safety.dir
 /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles/module14_multithreading.dir
 /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles/edit_cache.dir
 /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles/study-parallel-programming.dir

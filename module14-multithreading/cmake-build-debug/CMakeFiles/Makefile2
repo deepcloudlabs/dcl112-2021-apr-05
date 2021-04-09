@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-mul
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/study-thread-safety.dir/all
 all: CMakeFiles/module14_multithreading.dir/all
 all: CMakeFiles/study-parallel-programming.dir/all
 
@@ -84,10 +85,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/study-thread-safety.dir/clean
 clean: CMakeFiles/module14_multithreading.dir/clean
 clean: CMakeFiles/study-parallel-programming.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/study-thread-safety.dir
+
+# All Build rule for target.
+CMakeFiles/study-thread-safety.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target study-thread-safety"
+.PHONY : CMakeFiles/study-thread-safety.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/study-thread-safety.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/study-thread-safety.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/study-thread-safety.dir/rule
+
+# Convenience name for target.
+study-thread-safety: CMakeFiles/study-thread-safety.dir/rule
+
+.PHONY : study-thread-safety
+
+# clean rule for target.
+CMakeFiles/study-thread-safety.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-thread-safety.dir/build.make CMakeFiles/study-thread-safety.dir/clean
+.PHONY : CMakeFiles/study-thread-safety.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/module14_multithreading.dir
@@ -96,12 +125,12 @@ clean: CMakeFiles/study-parallel-programming.dir/clean
 CMakeFiles/module14_multithreading.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module14_multithreading.dir/build.make CMakeFiles/module14_multithreading.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target module14_multithreading"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target module14_multithreading"
 .PHONY : CMakeFiles/module14_multithreading.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/module14_multithreading.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/module14_multithreading.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/module14_multithreading.dir/rule
@@ -123,7 +152,7 @@ CMakeFiles/module14_multithreading.dir/clean:
 CMakeFiles/study-parallel-programming.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/study-parallel-programming.dir/build.make CMakeFiles/study-parallel-programming.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target study-parallel-programming"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module14-multithreading/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target study-parallel-programming"
 .PHONY : CMakeFiles/study-parallel-programming.dir/all
 
 # Build rule for subdir invocation for target.
