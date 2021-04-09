@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/circle.cpp
-circle.h
-/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/circle.h
-
 /cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/circle.h
 ostream
 -
+
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/read-circle.cpp
+iostream
+-
+fstream
+-
+circle.h
+/cygdrive/d/var/workspace/dcl/dcl112-2021-apr-05/module15-iostream/circle.h
 
